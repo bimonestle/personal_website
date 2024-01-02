@@ -5,5 +5,5 @@ from django.template import loader
 
 def calc_avg_sess(request):
     # return HttpResponse("Hello, This is Calculate Average Sessions project!") # testing only
-    template = loader.get_template("my_first.html")
+    template = loader.get_template("calc_avg_sess.html")
     return HttpResponse(template.render())
