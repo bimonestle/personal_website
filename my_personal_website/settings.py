@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "calculate_avg_sessions"
+    "calculate_avg_sessions",
+    "home"
 ]
 
 MIDDLEWARE = [
