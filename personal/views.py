@@ -10,3 +10,10 @@ def personal(request):
 def calculate_avg_sessions(request):
     template = loader.get_template("calc_avg_sess.html")
     return HttpResponse(template.render())
+
+def testing(request):
+    template = loader.get_template("testing.html")
+    context = {
+        "fruits": ["Apple", "Banana", "Cherry"],
+    }
+    return HttpResponse(template.render(context, request))

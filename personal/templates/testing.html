@@ -1,0 +1,12 @@
+{% extends "master.html" %}
+
+{% block title %}Testing Page{% endblock %}
+
+{% block content %}
+    {% for fruit in fruits %}
+        {% comment %} the first variable act as a loop counter {% endcomment %}
+        <h1>{{forloop.counter0|add:1}}. {{fruit}}</h1>
+    {% endfor %}
+
+    <p>In views.py, you can see what the fruits variable looks like.</p>
+{% endblock %}
