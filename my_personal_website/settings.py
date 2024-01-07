@@ -23,9 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-(is^zbzi+j6$er0)^2=9_^$htbg2@k4nh$$#g9bk7w(%el8((p"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# IMPORTANT:
+# When Debug = False, Django requires you to specify the hosts you will allow this Django to run from.
+# In production, this should be replaced with a proper domain name:
+# ALLOWED_HOSTS = ["yourdomain.com"]
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
