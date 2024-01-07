@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class CalculateAvgSessionsConfig(AppConfig):
+class PersonalConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "calculate_avg_sessions"
+    name = "personal"
